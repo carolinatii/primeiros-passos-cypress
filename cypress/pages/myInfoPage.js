@@ -20,11 +20,11 @@ class MyInfoPage {
         cy.get(this.selectorsList().lastNameField).clear().type(lastName)
     }
     
-    fillEmployeeDetails(employeeId,otherId,driversLicense){
+    fillEmployeeDetails(employeeId,otherId,driversLicense,date){
         cy.get(this.selectorsList().genericField).eq(3).clear().type(employeeId)
         cy.get(this.selectorsList().genericField).eq(4).clear().type(otherId)
         cy.get(this.selectorsList().genericField).eq(5).clear().type(driversLicense)
-        cy.get(this.selectorsList().genericField).eq(6).clear().type()
+        cy.get(this.selectorsList().genericField).eq(6).clear().type(date)
     }
 
     
